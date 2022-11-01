@@ -9,6 +9,8 @@
     "website": "https://github.com/dessanhemrayev",
     "depends": ["sale"],
     "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
         "views/sale_order_line_views.xml",
         ],
     "installable": True,
