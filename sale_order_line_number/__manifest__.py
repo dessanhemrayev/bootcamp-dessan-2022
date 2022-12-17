@@ -5,13 +5,14 @@
     "category": "",
     "summary": """Добавить нумерацию строк Заказа Продаж (Sales Order).
                   Нумерация должна дополнять существующий""",
-    "author": "Dessan Hemrayev",
-    "website": "https://github.com/dessanhemrayev",
+    "author": "DessanHemrayev",
+    "website": "https://dessanhemrayev.github.io",
     "depends": ["sale"],
     "data": [
         "security/security.xml",
         "security/ir.model.access.csv",
         "views/sale_order_line_views.xml",
+        "views/sale_order_line_tree.xml",
     ],
     "demo": ["data/demo_data.xml"],
     "installable": True,

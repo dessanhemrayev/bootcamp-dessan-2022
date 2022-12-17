@@ -1,5 +1,4 @@
 from odoo import api, fields, models
-from odoo.tools.profiler import profile
 
 
 class SaleOrderLine(models.Model):
