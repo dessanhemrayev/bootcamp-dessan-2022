@@ -1,0 +1,22 @@
+<odoo>
+    <record id="sale_order_line_view_tree" model="ir.ui.view">
+        <field name="name">sale_order_line_view_tree</field>
+        <field name="model">sale.order.line</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="id" />
+                <field name="line_number" />
+            </tree>
+        </field>
+    </record>
+
+    <menuitem
+        id="sale_order_line_menu"
+        name="Order line"
+        action="sale_order_line_view_tree"
+        parent="parent_id"
+        sequence="10"
+    />
+
+
+</odoo>
