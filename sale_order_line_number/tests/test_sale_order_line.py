@@ -1,9 +1,11 @@
 from odoo.tests.common import Form, TransactionCase
 
 
-class TestCommon(TransactionCase):
+class TestSaleOrderLine(TransactionCase):
     def setUp(self, *args, **kwargs):
-        super(TestCommon, self).setUp(*args, **kwargs)
+        super(TestSaleOrderLine, self).setUp(*args, **kwargs)
+
+        self.Users = self.env['res.users'].with_context(no_reset_password)
 
         self.customer_des = self.env["res.partner"].create({"name": "Dess"})
         self.product_mac = self.env["product.product"].create({"name": "macbook"})
